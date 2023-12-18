@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myPortifolio</title>
+    <title>my portfolio website</title>
     <link rel="stylesheet" href="index.css">
 
 </head>
@@ -39,7 +39,7 @@
              
         </nav>
         <div class="header-text">
-            <h1>Software/DevOps Engineer</h1>
+            <h1>Software Engineer</h1>
             <p>Hi I'm <span>Joseph</span> Muema from Machakos <br>Kenya.</p>
 
         </div>
@@ -164,7 +164,7 @@
         <div class="service-list-1">
             
         <h3>UI/Ux web Design</h3> 
-        <p>I design and build web apps. Contact me for responsive websites, blos or articles.</p>
+        <p>I design and build web apps. Contact me for responsive websites, blogs or articles.</p>
 
         </div>
         <div class="service-list-2">
@@ -262,6 +262,19 @@
     </div>
     
 </div>
+<div class="container">
+    <div class ="view-mode">
+	<div class="row">
+	   <div class="col-one">
+	   <div class= "dark" onclick="darkMode()">DARK</div>
+	   </div>
+	   <div class="col-two">
+	<div class = "light" onclick="lightMode()">LIGHT</div>
+	
+	</div>
+</div>
+</div>
+</div>
 
 
 <div id="copyright">
@@ -302,6 +315,37 @@
     function closeMenu(){
         sidem.style.right = "-200px";
     }
+</script>
+<script>
+const viewText = document.querySelector(".tab-contents ul li");
+const copyright = document.querySelector(".copyright");
+const view = document.querySelector("body");
+const dak = document.querySelector(".light");
+const lit = document.querySelector(".dark");
+const copy = document.querySelector(".copyright p");
+const btn = document.querySelector(".btn");
+
+	function lightMode(){
+	view.style.background = "#cccf";
+	view.style.color = "#080808";
+	viewText.style.color = "#272626";
+	copyright.style.background = "#e3e3ff";
+	dak.style.background = "#ababc3";
+	copy.style.color = "navy";
+	btn.style.background = "navy";
+	lit.style.background = "#276578";
+	}
+	
+	const viewdark = document.querySelector("body");
+	function darkMode(){
+	viewdark.style.background = "#080808";
+	viewdark.style.color = "#fff";
+	lit.style.background = "#ababc3";
+	dak.style.background = "#276578";
+	copyright.style.background = "#262626";
+	copy.style.color = "#fff";
+	btn.style.background = "#ff004f";
+	}
 </script>
 </body>
 </html>
