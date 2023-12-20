@@ -81,13 +81,15 @@ nav ul li a:hover::after{
 .header-text h1{
     margin-top: 20px;
     font-size: 13px;
-    color: rgb(69, 30, 210);
+    
 }
 .header-text p{
     font-size: 20px;
+    color: maroon;
+    padding-top:14px;
 }
 .header-text p span{
-    color: rgb(87, 240, 138);
+    color: #ff004f;
 }
 
 /*<---------about me----------->*/
@@ -318,12 +320,19 @@ padding: 10px 0;
     font-weight: 300;
 
 }
+
+
 .content-left p a{
-    margin-top: 30px;
-    color: green		/* rgb(27, 155, 300)*/;
+    margin-top: 30px;	
     text-decoration: none;
     font-size:15px;
 }
+
+.content-left p a sup{
+
+color: rgb(27, 155, 300);
+}
+
 .content-right form{
     width: 100%;
 }
@@ -356,6 +365,11 @@ form input, form textarea{
     font-size: 6px;
     margin-right: 8px;
     
+}
+
+.icons sup{
+color: red;
+
 }
 .social-icons{
     margin-left: 3px;
@@ -392,7 +406,7 @@ form input, form textarea{
     background: none;
     border-radius: 30px;
     border:1px solid #ff004f;
-    color: #fff;
+    
     transition: background 0.5s transform 0.5s;
 }
 .btn2 a{
@@ -417,7 +431,7 @@ form input, form textarea{
 /*-------small screen devices----*/
 @media only screen and (max-width: 600px) {
   #header{
-    background-image:url(images/portfoliosmall.jpg);
+    background-image:url(images/portfolio.png);
   } 
   
   .header-text{
@@ -449,6 +463,9 @@ form input, form textarea{
     nav .fa{
         display: block;
         font-size: 25px;
+        background: navy;
+        padding: 3px 6px;
+        border-radius: 2px;
     }
     nav ul .fa{
         position: absolute;
@@ -645,6 +662,14 @@ padding:7px 5px;
 align-text: center;
 right:0;
 transition: background 0.5s;
+}
+
+#msg{
+color:#61b752;
+margin-top:-20px;
+display:block;
+font-size: 14px;
+font-weight:400;
 }
 
 
