@@ -680,12 +680,9 @@ transition: background 0.5s;
     box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
 
-button {
+
+.slidebutton {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
