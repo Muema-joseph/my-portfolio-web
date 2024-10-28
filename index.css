@@ -308,7 +308,7 @@ padding: 10px 0;
 /*---contact---*/
 .content-right{
     flex-basis: 60%;
-    position: relative;
+    
 }
 
 .content-left{
@@ -681,7 +681,7 @@ transition: background 0.5s;
 form button{
     padding:5px;
     width: 100%;
-    position: absolute;
+    
 }
 
 
