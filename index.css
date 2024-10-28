@@ -350,7 +350,6 @@ form input, form textarea{
 }
 
 .btn{
-    position: fixed;
     padding: 15px;
     margin: 15px;
     font-size: 16px;
