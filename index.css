@@ -351,7 +351,7 @@ form input, form textarea{
 }
 
 .btn{
-    position: auto;
+    position: absolute;
     font-size: 15px;
     background: #ff004f;
     cursor: pointer;
