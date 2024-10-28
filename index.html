@@ -187,6 +187,21 @@
     </div>
     
 </div>
+	<div class="slider">
+        <div class="slides">
+            <div class="slide fade">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="image3.jpg" alt="Image 3">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
 
 <!-------work-------->
 <div id="work">
@@ -423,6 +438,31 @@ var sups = document.querySelectorAll(".content-left p a sup");
 	}
 	
 </script>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function changeSlide(n) {
+    slideIndex += n;
+    showSlides();
+}
+
+function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+    if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex].style.display = "flex";  
+}
+
+	</script>
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw8YtHzI2p6MZLtk9O8VqWIr3a1PgOS5G9oGhSufEzy7LFRw6dJcxODvw2Bi3AH7uvC/exec'
   const form = document.forms['submit-to-google-sheet']
