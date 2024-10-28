@@ -351,6 +351,7 @@ form input, form textarea{
 }
 
 .btn{
+    position: auto;
     font-size: 15px;
     background: #ff004f;
     cursor: pointer;
@@ -678,11 +679,7 @@ transition: background 0.5s;
     min-width: 100%;
     box-sizing: border-box;
 }
-form button{
-    padding:5px;
-    width: 100%;
-    
-}
+
 
 
 button {
