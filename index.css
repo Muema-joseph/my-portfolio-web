@@ -350,13 +350,11 @@ form input, form textarea{
 }
 
 .btn{
-    padding: 15px;
-    margin: 15px;
-    font-size: 16px;
+    font-size: 15px;
     background: #ff004f;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .icons{
@@ -679,7 +677,10 @@ transition: background 0.5s;
     min-width: 100%;
     box-sizing: border-box;
 }
-
+form button{
+    padding:5px;
+    width: 100%;
+}
 
 
 button {
